@@ -214,13 +214,15 @@ export default function LivestockDetail() {
           }}
           className={`w-full h-12 rounded-xl font-bold ${
             animal.status === 'QUARANTINED'
-              ? 'bg-brand-100 text-brand-700'
-              : 'bg-red-600 text-white active:bg-red-700'
-          }`}
-        >
-          {animal.status === 'QUARANTINED'
             ? 'Kelola / Akhiri Karantina'
             : '⚠️ Karantina Ternak'}
+        </button>
+        <button
+          data-testid="open-edit-button"
+          onClick={() => navigate(`/livestock/${animal.id}/edit`)}
+          className="w-full h-12 rounded-xl border border-slate-300 bg-white text-slate-700 font-bold active:bg-slate-50"
+        >
+          ✏️ Edit Data Ternak
         </button>
       </div>
 
@@ -507,14 +509,7 @@ function QuarantineForm({
           >
             {saving ? 'Menyimpan…' : '⚠️ Mulai Karantina'}
           </button>
-                  <button
-          data-testid="open-edit-button"
-          onClick={() => navigate(`/livestock/${animal.id}/edit`)}
-          className="w-full h-12 rounded-xl border border-slate-300 bg-white text-slate-700 font-bold active:bg-slate-50"
-        >
-          ✏️ Edit Data Ternak
-        </button>
-        </div>
+      </div>
       )}
     </Sheet>
   );
