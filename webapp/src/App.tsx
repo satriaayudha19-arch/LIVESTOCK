@@ -7,6 +7,7 @@ import Profile from './pages/Profile';
 import LivestockDetail from './pages/LivestockDetail';
 import { useNetworkSync } from './hooks/useNetworkSync';
 import ScanRedirect from './pages/ScanRedirect';
+import EditLivestock from './pages/EditLivestock';
 
 export default function App() {
   useNetworkSync();
