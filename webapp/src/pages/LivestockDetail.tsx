@@ -72,7 +72,7 @@ export default function LivestockDetail() {
     <div className="flex flex-col gap-4">
       <button
         data-testid="detail-back-button"
-        onClick={() => navigate(-1)}
+        onClick={() => (window.history.length > 1 ? navigate(-1) : navigate('/'))}
         className="self-start text-sm font-semibold text-brand-700 -ml-1"
       >
         ← Kembali
@@ -85,7 +85,7 @@ export default function LivestockDetail() {
             {animal.gender === 'M' ? '🐂' : '🐄'}
           </div>
           <div className="flex-1 min-w-0">
-            <h2 className="text-xl font-extrabold text-slate-900 truncate">
+            <h2 className="text-lg font-extrabold text-slate-900 break-words">
               {animal.register_number}
             </h2>
             <p className="text-sm text-slate-500">{animal.breed}</p>
@@ -507,6 +507,13 @@ function QuarantineForm({
           >
             {saving ? 'Menyimpan…' : '⚠️ Mulai Karantina'}
           </button>
+                  <button
+          data-testid="open-edit-button"
+          onClick={() => navigate(`/livestock/${animal.id}/edit`)}
+          className="w-full h-12 rounded-xl border border-slate-300 bg-white text-slate-700 font-bold active:bg-slate-50"
+        >
+          ✏️ Edit Data Ternak
+        </button>
         </div>
       )}
     </Sheet>
