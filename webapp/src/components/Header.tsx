@@ -24,10 +24,10 @@ export default function Header() {
           </div>
           <div className="min-w-0">
             <h1 className="text-base font-bold leading-tight truncate">
-              Indonesia Livestock
+              Jago Kandang
             </h1>
             <p className="text-[11px] text-brand-100 leading-tight">
-              Manajemen Ternak
+              Livestock
             </p>
           </div>
         </div>
