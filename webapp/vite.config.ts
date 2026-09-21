@@ -12,8 +12,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'pwa-192x192.png', 'pwa-512x512.png'],
       manifest: {
-        name: 'Indonesia Livestock',
-        short_name: 'IndoLestock',
+        name: 'Jago Kandang Livestock',
+        short_name: 'Jago Kandang',
         description: 'Manajemen ternak cerdas — offline-first untuk peternak Indonesia.',
         lang: 'id',
         theme_color: '#15803d',
