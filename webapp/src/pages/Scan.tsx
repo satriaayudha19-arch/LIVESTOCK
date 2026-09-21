@@ -7,7 +7,7 @@ import { haptic } from '../lib/utils';
 type ScanState = 'idle' | 'scanning' | 'found' | 'error';
 
 // Extract "LIVESTOCK-0001" from a URI like
-// https://indolestock.com/scan/LIVESTOCK-0001
+// https://jagokandangapp.gloos.id/scan/LIVESTOCK-0001
 function extractId(raw: string): string {
   try {
     const url = new URL(raw);
