@@ -194,7 +194,7 @@ export default function LivestockDetail() {
         </div>
       )}
 
-      {/* Actions */}
+            {/* Actions */}
       <div className="flex flex-col gap-2">
         <button
           data-testid="open-health-form-button"
@@ -214,6 +214,11 @@ export default function LivestockDetail() {
           }}
           className={`w-full h-12 rounded-xl font-bold ${
             animal.status === 'QUARANTINED'
+              ? 'bg-brand-100 text-brand-700'
+              : 'bg-red-600 text-white active:bg-red-700'
+          }`}
+        >
+          {animal.status === 'QUARANTINED'
             ? 'Kelola / Akhiri Karantina'
             : '⚠️ Karantina Ternak'}
         </button>
