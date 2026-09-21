@@ -87,7 +87,7 @@ export default function Profile() {
       {/* About */}
       <div className="rounded-2xl bg-white border border-slate-200 p-4 text-sm text-slate-500">
         <h3 className="font-bold text-slate-900 mb-2">Tentang Aplikasi</h3>
-        <p>Indonesia Livestock v1.0.0</p>
+        <p>JAGO KANDANG Livestock v1.0.0</p>
         <p className="mt-1">
           PWA offline-first untuk manajemen ternak. Data disimpan lokal (IndexedDB)
           dan disinkronkan otomatis saat koneksi tersedia.
