@@ -21,6 +21,7 @@ export default function App() {
         <Route path="/add" element={<AddData />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/livestock/:id" element={<LivestockDetail />} />
+        <Route path="/livestock/:id/edit" element={<EditLivestock />} />
       </Route>
     </Routes>
   );
