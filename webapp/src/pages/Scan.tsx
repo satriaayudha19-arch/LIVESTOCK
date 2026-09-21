@@ -210,8 +210,7 @@ export default function Scan() {
           data-testid="nfc-unsupported-notice"
           className="text-center text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-xl px-4 py-2 max-w-xs"
         >
-          ⚠️ Web NFC hanya tersedia di Chrome Android (HTTPS). Gunakan input
-          manual di bawah untuk pengujian.
+          ℹ️ Pemindai dalam aplikasi hanya tersedia di Chrome Android. Di perangkat lain, tempelkan stiker NFC langsung ke ponsel, atau gunakan input manual di bawah.
         </div>
       )}
 
